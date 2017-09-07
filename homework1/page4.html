@@ -26,7 +26,7 @@ in html
     </header>
     <div id="nav">
     	<nav>
-    	        <hr width="50%"/>
+    	        <hr>
     	        <ul id="menu">
     	        	<li class="item"><a href="index.html">Home</a></li>
     	       	 	<li class="item"><a href="page2.html">Caesar Cipher</a></li>
@@ -37,20 +37,22 @@ in html
 	</div>
 	<div id="pics">
 		<img src="playfair1.jpg" alt="Playfair grid image" style="width:450px;height:150px;">
-		<br></br>
 		<img src="playfair2.jpg" alt="Playfair encrypted image" style="width:450px;height:75px;">
 	</div>
 	<p>
 		The Playfair Cipher was invented in 1854 by Charles Wheatstone. This cipher encrypts a pair of characters, instead of encrypting each letter individually. Encrypting the pairs of letters allow for six hundred combinations, instead of the twenty-six single letter combinations. The key for this cipher is a 5x5 table of letters starting with a phrase or word being used as the key. After the word or phrase is in the table, the remaining spaces are filled by letters in alphabetical order starting with 'A', without repeating letters used in the phrase. To start the encryption, you must divide the plaint-text message into pairs, if there is an odd number of characters, a letter is added to the end. The rules to follow in the encryption are:
+	</p>
 		<ul>
 			<li>If the pair of letters are in the same column, the encrypted letters are the ones directly below. If it is the last letter in the column, the encrypted letter is the first in the column.</li>
 			<li>If the pair of letters are in the same row, you take the letter directly to the right. If it is the last letter in the row, the encrypted letter is the first letter in the row.</li>
 			<li>If both of the above rules do not apply, the pair of letters form a rectangle in the table, and the encrypted letter is the opposite corner of the rectangle.</li>
 		</ul>
-	</p>
-	<br></br>
+	
 	<a href="https://learncryptography.com/classical-encryption/playfair-cipher">Click here</a> to learn more about the Playfair Cipher.
+    <details>
+    	 <summary>Copyright 2017.</summary>
+    </details>
     </body>
-        <br></br>
-    <summary>Copyright 2017.</summary>
+    
+   
 </html>
