@@ -6,43 +6,37 @@ header{
 	background-color: black;
 }
 h1{
-	width:40%;
-	font-size:16px;
-	color: pink;
-	text-align: left;
+	text-align:center;
+	
 }
 h2{
-font-size:16px;
-	width:40%;
-	float:right;
+	font-size:16px;
+	color: black;
+	text-align: left;
 }
 #clear{
 	clear:both;
 }
 h3{
 	font-size:16px;
-	width: 40%;
 	color:black;
-	float: left;
+	text-align:left;
 }
 #nav{
 	margin:0px auto;
 	text-align: center;
 }
 #pics{
-	width: 50%;
-	margin: 0 auto;
+	text-align:center;
 }
 #menu {
 	margin:0;
 	padding:0;
     list-style-type: none;
     overflow: auto;
-    background-color: #333;
+    background-color: black;
 }
 .item {
-    border: groove;
-    border-color: orange;
     display: inline;
 }
 .item a {
@@ -51,9 +45,31 @@ h3{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 .item a:hover {
     background-color: gray;
-    position: relative;
-    padding:0;
+   
+}
+
+#p3{
+	font-size: 16px;
+	color: white;
+	background-color:#D48B8B;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding: 10px;
+}
+
+.caesar{
+	text-shadow: 3px 3px #1e757a;
+}
+mark{
+	background-color: #acadaf;
+	color:black;
+}
+
+summary{
+	text-align:center;
 }
