@@ -2,10 +2,11 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
     <body>
         <?php
+        //variables to get the amount of points from each player
         $points1=0;
         $points2=0;
         
-        
+        //picks the suit of the card
         function suitpicker()
         {
             $num= rand(0,3);
@@ -29,7 +30,7 @@
             return $suit;
         }
         
-        
+        //prints the total of the dealer
         function score($total)
         {
             echo '<div class = "right_column">',
@@ -37,7 +38,7 @@
              '</div>';
              echo '<div class = "clear">' .'</div>';
         }
-        
+        //prints the total for the player
         function score2($total)
         {
             echo '<div class = "right_column">',
@@ -45,7 +46,7 @@
              '</div>';
              echo '<div class = "clear">' .'</div>';
         }
-        
+        //figures out if the dealer or player won the game
         function winner($score1, $score2)
         {
             if($score1 > $score2)
@@ -60,7 +61,7 @@
                 echo "<h4>TIE!</h4>";
             }
         }
-    
+    //puts the hand into each player's array
     function addcards(array $players)
         {
         $value =0;
@@ -84,7 +85,7 @@
         $points1 += $value; //puts value into global points var
         score($points1);
         }
-    
+    //adds the cards to the second player
     function addcards2(array $players)
         {
         $value =0;
@@ -111,6 +112,7 @@
     
         $player = array($p1, $p2);
         
+        //fills the dealer values
         $p1 = array(
         "name" => "card_back", 
         "imgURL" => "./Abra.png",
@@ -147,8 +149,6 @@
         );
     
         echo "<h1>SIMPLE BLACKJACK</h1>";
-
-    //picks the 
    
         echo '<div class = "left_column">' ."DEALER: <img src= ".$p1["imgURL"]." height = '120' width = '120'>",
         //displays the cards picked
