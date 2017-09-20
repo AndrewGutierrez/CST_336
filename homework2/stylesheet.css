@@ -1,0 +1,68 @@
+body
+{
+    background-color: #01a039;
+}
+
+h1
+{
+    font-family: monospace;
+    font-size: 40px;
+    border: dotted;
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+h2 
+{
+    font-family: monospace;
+    display: block;
+    color: white;
+    text-align: left;
+}
+
+h3
+{
+    font-family: monospace;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+h4
+{
+    font-family: monospace;
+    font-size: 50px;
+    display: block;
+    color: black;
+    text-align: center;
+    border: groove;
+    border-color: white;
+}
+
+.left_column
+{
+    font-family: monospace;
+    color: white;
+    float: left;
+    width: 45%;
+}
+
+.right_column
+{
+    font-family: monospace;
+    color:white;
+    float: right;
+    width: 45%;
+}
+
+.clear
+{
+    clear: both;
+}
+
+footer
+{
+    font-family: monospace;
+    text-align: center;
+}
