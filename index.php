@@ -8,5 +8,7 @@
         <a href="lab2/777/index.php">Lab 2</a>
         <br></br>
         <a href="homework2/index.php">Homework 2</a>
+        <br></br>
+        <a href="lab4/Slider/index.php">Lab 4</a>
     </body>
 </html>
