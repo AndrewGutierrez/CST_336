@@ -1,0 +1,33 @@
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    border: groove;
+    border-color: #003996;
+}
+
+h2{
+    font-size:20;
+    text-decoration: underline;
+    text-align: left;
+    color: white;
+}
+
+.formpage{
+    float: left;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.data
+{
+    float: right;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.clearboth
+{
+    clear: both;
+}

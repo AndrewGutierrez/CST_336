@@ -10,5 +10,7 @@
         <a href="homework2/index.php">Homework 2</a>
         <br></br>
         <a href="lab4/Slider/index.php">Lab 4</a>
+        <br></br>
+        <a href="homework3/index.php">Homework 3</a>
     </body>
 </html>
