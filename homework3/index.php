@@ -32,12 +32,12 @@
         if(isset($_GET['image']))
         {
            //$background = $_GET['background'];
-            echo "Created Pokemon:";
+            echo "<h3>" ."Your created pokemon" ."</h3>";
             echo "<br/>";
             echo "<img src='" ."imgs/" . $_GET['image'] ."'width= '150'>" ."<br/>";
             echo "Nickname: " . $_GET['firstName'] . "<br/>";
             echo "Gender: " ."<img src='" ."imgs/" . $_GET['gender'] . '.png' ."'width= '50'>" ."<br/>";
-            echo "Level: " . $_GET['level'] . "<br/>";
+            echo "<br/>" ."Level: " . $_GET['level'] . "<br/>";
             echo "<br/> " ."Element Type: " ."<br/>" ."<br/>";
             echo getElementType();
         }
@@ -46,7 +46,7 @@
     
     <head>
         <h1>Pokemon Generator</h1>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
        <style>
        body{
             background-image: url(<?=$background?>);
@@ -71,8 +71,8 @@
                 <label for="female">Female</label>
                 <input type="radio" name="gender" id="female" value="female"><br>
                 
-                Level
-                <input type="number" name="level" min="0" max="100" required oninvalid="this.setCustomValidity('Please enter the level')"
+                Level 1 - 100: 
+                <input type="number" name="level" min="1" max="100" required oninvalid="this.setCustomValidity('Please enter the level from 1-100')"
  oninput="setCustomValidity('')"><br>
                 
                 Chosen Pokemon

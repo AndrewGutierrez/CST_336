@@ -13,6 +13,12 @@ h2{
     color: white;
 }
 
+h3
+{
+    font-size: 30px;
+    color: #f9aa20;
+    font-weight: bold;
+}
 .formpage{
     float: left;
     font-size: 30px;
