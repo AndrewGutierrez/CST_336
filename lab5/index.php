@@ -144,7 +144,7 @@
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo "Device name: " .$row['deviceName'] ." Status:" .$row['status'] ." Price:" .$row['price'] ."<br/>";
+            echo "Device name: " .$row['deviceName'] ."\tType: " .$row['type'] ."\tStatus:" .$row['status'] ."\tPrice:" .$row['price'] ."<br/>";
         }
     } else {
         echo "0 results";
