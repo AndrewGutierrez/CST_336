@@ -1,0 +1,23 @@
+h1
+{
+    text-align: center;
+    color: #004cc6;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+body
+{
+    text-align: center;
+    color: #595858;
+    font-style: oblique;
+}
+h2
+{
+    text-align: center;
+    color: #cc5902;
+    font-size: 24px;
+    text-decoration: underline;
+    font-style: italic;
+}

@@ -1,3 +1,15 @@
 [23-Oct-2017 04:44:02 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/github/practice/imageprac.php on line 7
 [23-Oct-2017 04:44:02 UTC] PHP Stack trace:
 [23-Oct-2017 04:44:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/practice/imageprac.php:0
+[03-Nov-2017 23:44:35 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/github/lab6/index.php on line 8
+[03-Nov-2017 23:44:35 UTC] PHP Stack trace:
+[03-Nov-2017 23:44:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[03-Nov-2017 23:44:35 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[03-Nov-2017 23:44:35 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/github/lab6/index.php on line 8
+[03-Nov-2017 23:44:35 UTC] PHP Stack trace:
+[03-Nov-2017 23:44:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[03-Nov-2017 23:44:35 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[03-Nov-2017 23:44:35 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/github/lab6/index.php on line 9
+[03-Nov-2017 23:44:35 UTC] PHP Stack trace:
+[03-Nov-2017 23:44:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[03-Nov-2017 23:44:35 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
