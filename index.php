@@ -14,5 +14,7 @@
         <a href="homework3/index.php">Homework 3</a>
         <br></br>
         <a href="lab5/index.php">Lab 5</a>
+        <br></br>
+        <a href="lab6/index.php">Lab 6</a>
     </body>
 </html>
