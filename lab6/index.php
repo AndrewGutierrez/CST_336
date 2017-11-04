@@ -5,7 +5,7 @@ function loginProcess() {
 
     if (isset($_POST['loginForm'])) {  //checks if form has been submitted
     
-        include '../../database.php';
+        include '../database.php';
         $conn = getDatabaseConnection();
       
             $username = $_POST['username'];

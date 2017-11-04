@@ -8,7 +8,7 @@ if (!isset($_SESSION['username'])) {  //checks whether the admin is logged in
 }
 
 function userList(){
-  include '../../database.php';
+  include '../database.php';
   $conn = getDatabaseConnection();
   
   $sql = "SELECT *

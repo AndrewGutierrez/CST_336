@@ -6,7 +6,7 @@ if(!isset($_SESSION['username']))
 }
 
 
-include '../../database.php';
+include '../database.php';
 $conn = getDatabaseConnection();
 
     function departmentList(){
