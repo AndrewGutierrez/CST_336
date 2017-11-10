@@ -21,6 +21,19 @@ $(".replayBtn").on("click", function() {
     location.reload();
 });
 
+function showhint()
+{
+    $("#word").append("<br />");
+    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>")
+    
+    $('#showhint').hide();
+    //disableButton($(this));
+}
+
+//show hint____________
+$(".hint").on("click", function(){
+   showhint(); 
+});
 
 $("#letters").on("click", ".letter", function(){
     checkLetter($(this).attr("id"));
@@ -62,8 +75,7 @@ function updateBoard() {
         $("#word").append(' ');
     }
     
-    $("#word").append("<br />");
-    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>")
+    
 }
 
 
