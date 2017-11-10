@@ -16,5 +16,7 @@
         <a href="lab5/index.php">Lab 5</a>
         <br></br>
         <a href="lab6/index.php">Lab 6</a>
+        <br></br>
+        <a href="lab7/hangman/index.html">Lab 7</a>
     </body>
 </html>
