@@ -1301,3 +1301,7 @@
 [22-Oct-2017 19:41:57 UTC] PHP Stack trace:
 [22-Oct-2017 19:41:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/practice/question2/index.php:0
 [22-Oct-2017 19:41:57 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/practice/question2/index.php:40
+[15-Nov-2017 21:54:23 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/ubuntu/workspace/github/practice/midterm/program2.php on line 52
+[15-Nov-2017 21:54:23 UTC] PHP Stack trace:
+[15-Nov-2017 21:54:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/practice/midterm/program2.php:0
+[15-Nov-2017 21:54:23 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/github/practice/midterm/program2.php:52

@@ -143,7 +143,7 @@ function dataList(){
   $stmt = $conn->prepare($sql);
   //$stmt->execute();
   $records = $stmt->fetchAll(PDO::FETCH_ASSOC);*/
-  echo $sql;
+  //echo $sql;
   $result = $conn->query($sql);
   
    
@@ -203,7 +203,7 @@ function dataList2(){
   //$sql= "SELECT * FROM " .$_GET['category'] ." WHERE 1"; //."model " .$_GET['model'] ." AND modelType " .$_GET['type'] .$_GET['price']; //Working
   $sql= "SELECT * FROM " .$_GET['category'] ." WHERE " ."cpu LIKE " ."'%" .$_GET['model'] ."%'" ;// AND modelType " .$_GET['type'] .$_GET['price']; //Testing
 
-  echo $sql; //TESTING
+  //echo $sql; //TESTING
   $result = $conn->query($sql);
   
    //echo $sql;
