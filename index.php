@@ -18,5 +18,7 @@
         <a href="lab6/index.php">Lab 6</a>
         <br></br>
         <a href="lab7/hangman/index.html">Lab 7</a>
+         <br></br>
+        <a href="groupproj/grouptest.php">Group Project</a>
     </body>
 </html>
