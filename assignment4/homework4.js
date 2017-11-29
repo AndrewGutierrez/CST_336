@@ -39,14 +39,17 @@ function getgender(sel)
 
 function getData()
     {
-
             y = document.getElementsByName("firstName")[0].value;
           
             b = document.getElementsByName("level")[0].value;
             c = document.getElementsByName("background")[0].value;
            
+           if(y == "" || b == "" || c == "" || poke =="" || gend =="" || element=="")
+           {
+               document.getElementById("demo").innerHTML += "Please clear page and fill out all fields";
+           }
            //document.getElementById("demo").innerHTML = 5 + 6;
-           
+           else{
            document.getElementById("demo").innerHTML += "<h3> Your created Pokemon: </h3>";
            document.getElementById("demo").innerHTML += "<br/>";
            document.getElementById("demo").innerHTML += "<img src='imgs/" +poke +".png'" +"width = '150'>";
@@ -63,6 +66,7 @@ function getData()
             
             background = "url('imgs/" + c + "')";
             document.body.style.backgroundImage = background;
+           }
     
     }
 //getData();
@@ -71,6 +75,27 @@ function getData()
        
 //JQuery button
 // Create listener for the replay button
-$(".replayBtn").on("click", function() {
+$(document).ready(function(){
+    $("form").submit(function(event){
+        event.preventDefault();
+        alert("Please fill out all fields");
+    });
+});
+
+
+$("#sub").on("click", function() {
+    $(document).ready(function(){
+    $("form").submit(function(event){
+        event.preventDefault();
+        alert("Please fill out all fields");
+    });
+});
     getData();
+});
+
+
+
+$("#google").on('click', function(){
+    
+     window.location = "index.html";    
 });

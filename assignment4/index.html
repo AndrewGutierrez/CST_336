@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-            
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <style>
        body{
             background-image : url("imgs/grass.png");
@@ -56,9 +56,11 @@
                     <option value ="beach.jpeg">Beach</option>
                 </select>
                 <br/>
-                <!---<input type="submit" value="Submit" name = "submit"/>--->
-                <button class="replayBtn">Clear Page</button>
-                <input type="button" onclick="getData()" value="Submit">
+                <!---<input type="submit" value="Submit" name = "submit"/>
+                <button class="replayBtn">Clear Page</button>--->
+                <input class="btn btn-success" id="sub" type="button"  value="Submit">
+                <br>
+                <input  class="btn btn-warning" id = "google" type="button" name = "google" value = "Clear page">
             </form>
             <div class="clearboth"></div>
         </div>
@@ -66,7 +68,6 @@
 <p id ="demo"></p>
     
     <script languange="javascript">
-
     </script>
     
     <script src="homework4.js"></script>
