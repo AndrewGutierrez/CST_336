@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <title>Pokemon Generator</title>
+    
+    <head>
+        <h1>Pokemon Generator</h1>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            
+       <style>
+       body{
+            background-image : url("imgs/grass.png");
+            background-size:100%;
+            background-repeat: no-repeat;
+       }
+       </style>
+    </head>
+    <body>
+        <br/> <br/> <br/>
+        <h2>Fill out to create your pokemon</h2>
+        <div class ="formpage">
+            <form name = "myform">
+                Pokemon's name: 
+                <input type="text" name="firstName" placeholder="NAME" required oninvalid="this.setCustomValidity('Please enter the name')"
+ oninput="setCustomValidity('')"/>
+                <br/>
+                
+                Gender:
+                <select name="gender" onChange="getgender(this);" required oninvalid="this.setCustomValidity('Please choose a gender')" oninput="setCustomValidity('')">
+                    <option value ="">Select</option>
+                    <option value = "male">male</option>
+                    <option value = "female">female</option>
+                </select>
+                <br>
+                
+                
+                Level 1 - 100: 
+                <input type="number" name="level" min="1" max="100" required oninvalid="this.setCustomValidity('Please enter the level from 1-100')"
+ oninput="setCustomValidity('')"><br>
+                
+                Chosen Pokemon
+                <select name="image" onChange="pokemon(this);" required oninvalid="this.setCustomValidity('Please choose a pokemon')" oninput="setCustomValidity('')">
+                    <option value ="">Select</option>
+                    <option value ="Charmander.png">Charmander</option>
+                    <option value ="Bulbasaur.png">Bulbasaur</option>
+                    <option value ="Squirtle.png">Squirtle</option>
+                </select>
+                
+                <br/>
+                Background
+                <select name="background" required oninvalid="this.setCustomValidity('Please choose a background')" oninput="setCustomValidity('')">
+                    <option value ="">Select</option>
+                    <option value ="grass.png">Forest</option>
+                    <option value ="city.jpeg">City</option>
+                    <option value ="beach.jpeg">Beach</option>
+                </select>
+                <br/>
+                <!---<input type="submit" value="Submit" name = "submit"/>--->
+                <button class="replayBtn">Clear Page</button>
+                <input type="button" onclick="getData()" value="Submit">
+            </form>
+            <div class="clearboth"></div>
+        </div>
+        <div class="data">
+<p id ="demo"></p>
+    
+    <script languange="javascript">
+
+    </script>
+    
+    <script src="homework4.js"></script>
+    </body>
+    
+    
+    
+</html>
