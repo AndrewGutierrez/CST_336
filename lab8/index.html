@@ -1,9 +1,11 @@
+
 <html>
     
 <head>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
     <script>
+    
         function getCityInfo() {
         
              $.ajax({
@@ -55,7 +57,7 @@
                     
             $.ajax({
                 type: "get",
-                url: "https://homework4-andrewgutierrez.c9users.io/github/lab8/api.php",
+                url: "api.php",
                 dataType: "json",
                 data: {'username': $('#username').val() },
                 success: function(data,status) {
