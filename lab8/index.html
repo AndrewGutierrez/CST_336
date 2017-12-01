@@ -17,6 +17,14 @@
                 },
                 success: function(data,status) {
                     console.log(data); 
+                    
+                    $("#zip_error_msg").html("");
+                    if(!data.city)
+                    {
+                        $("#zip_error_msg").html("Zip code is invalid");
+                        return;
+                    }
+                    
                     $("#city").html(data.city);
                     $("#lon").html(data.longitude);
                     $("#lat").html(data.latitude);
@@ -52,7 +60,8 @@
             });
         }
         
-        
+        //for the url just put the file name that way if it is on heroku/different domain it wont get an 
+        //access control error
         function validateUsername() {
                     
             $.ajax({
@@ -91,7 +100,7 @@
             Last Name:   <input type="text"><br> 
             Email:       <input type="text"><br> 
             Phone Number:<input type="text"><br><br>
-            Zip Code:    <input id="zip" onchange="getCityInfo();" type="text"><br>
+            Zip Code:    <input id="zip" onchange="getCityInfo();" type="text"><span id = "zip_error_msg"></span><br>
             City:  <span id="city"></span>
             <br>
             Latitude: <span id="lon"></span>
