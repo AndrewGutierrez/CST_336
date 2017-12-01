@@ -22,5 +22,7 @@
         <a href="groupproj/grouptest.php">Group Project</a>
          <br></br>
         <a href="assignment4/index.html">Homework 4</a>
+        <br></br>
+        <a href="lab8/index.html">Lab 8</a>
     </body>
 </html>
