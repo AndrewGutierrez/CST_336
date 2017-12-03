@@ -24,5 +24,7 @@
         <a href="assignment4/index.html">Homework 4</a>
         <br></br>
         <a href="lab8/index.html">Lab 8</a>
+        <br></br>
+        <a href="FinalProject/login.php">Final Project</a>
     </body>
 </html>
