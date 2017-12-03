@@ -1,0 +1,92 @@
+header
+{
+    text-align: center;
+    font-size:40px;
+}
+
+#signin
+{
+    text-align:center;
+    padding: 100px;
+}
+
+.login
+{
+    border: 3px solid #f1f1f1;
+}
+
+.return-btn
+{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+.login-btn
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.username, .password {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.user-pass
+{
+    padding: 16px;
+}
+
+#insert-form, #update-form
+{
+    padding: 12px 12px;
+    border: solid;
+    border-color: black;
+    font-size: medium;
+    font-family: monospace;
+}
+
+.insert-submit, .update-submit
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.table-div
+{
+    text-align:center;
+}
+
+.table th {
+    text-align:center;
+}
+
+h1
+{
+    text-align: center;
+    font-size: large;
+}
+
+#user-form, #report-div
+{
+    text-align: center;
+}
