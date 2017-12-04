@@ -119,3 +119,9 @@ Stack trace:
 [11-Nov-2017 05:37:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/practice/groupdatabasetest.php:0
 [11-Nov-2017 05:37:51 UTC] PHP   2. getDatabaseConnection() /home/ubuntu/workspace/github/practice/groupdatabasetest.php:3
 [11-Nov-2017 05:37:51 UTC] PHP   3. mysqli->mysqli() /home/ubuntu/workspace/github/database.php:37
+[04-Dec-2017 01:29:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM movies JOIN ratings ON movies.Name=ratings.Name WHERE genre is not NULL A' at line 1' in /home/ubuntu/workspace/github/FinalProject/user.php:94
+Stack trace:
+#0 /home/ubuntu/workspace/github/FinalProject/user.php(94): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/github/FinalProject/user.php on line 94
+[04-Dec-2017 01:31:05 UTC] PHP Parse error:  syntax error, unexpected '"<td>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/github/FinalProject/user.php on line 121

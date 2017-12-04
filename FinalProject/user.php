@@ -87,7 +87,7 @@
     if(isset($_GET['submit']))
     {
         global $conn;
-        $sql = "SELECT * FROM movies WHERE genre " .$_GET['genre'] 
+        $sql = "SELECT * FROM movies JOIN ratings ON movies.Name=ratings.Name WHERE genre " .$_GET['genre'] 
                 ." AND Director " .$_GET['director']
                 ." AND Corporation " .$_GET['corp'];
         $stmt = $conn->prepare($sql);
@@ -107,6 +107,7 @@
         echo "<th>Income</th>";
         echo "<th>Actor</th>";
         echo "<th>Corporation</th>";
+        echo "<th>Rating</th>";
         echo "</thead>";
         
         echo "<tbody>";
@@ -116,7 +117,8 @@
             echo "<td>" .$data['Name'] ."</td>" ."<td>" 
             .$data['Year'] ."</td>" ."<td>" .$data['Genre'] ."</td>"
             ."<td>" .$data['Director'] ."</td>" ."<td>" .$data['Minutes'] ."</td>"
-            ."<td>" .$data['Gross'] ."</td>" ."<td>" .$data['Actor'] ."</td>" ."<td>" .$data['Corporation'] ."</td>";
+            ."<td>" .$data['Gross'] ."</td>" ."<td>" .$data['Actor'] ."</td>" 
+            ."<td>" .$data['Corporation'] ."</td>" ."<td>" .$data['Percent'] ."</td>";
         
             echo "</tr>";
         }

@@ -91,8 +91,7 @@ function getdata()
 {
     global $conn;
   
-    $sql = "SELECT *
-          FROM movies WHERE 1";
+    $sql = "SELECT * FROM `movies` Join ratings ON movies.Name=ratings.Name";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -118,6 +117,7 @@ function getdata()
     echo "<th>Income</th>";
     echo "<th>Actor</th>";
     echo "<th>Corporation</th>";
+    echo "<th>Rating</th>";
     echo "<th>Update</th>";
     echo "<th>Delete</th>";
     echo "</thead>";
@@ -128,7 +128,7 @@ function getdata()
         echo "<tr>";
         echo "<td>" .$user['Name'] ."</td>" ."<td>" .$user['Year'] ."</td>" ."<td>" .$user['Genre'] ."</td>"
             ."<td>" .$user['Director'] ."</td>" ."<td>" .$user['Platform'] ."</td>" ."<td>" .$user['Minutes'] ."</td>"
-            ."<td>" .$user['Gross'] ."</td>" ."<td>" .$user['Actor'] ."</td>" ."<td>" .$user['Corporation'] ."</td>";
+            ."<td>" .$user['Gross'] ."</td>" ."<td>" .$user['Actor'] ."</td>" ."<td>" .$user['Corporation'] ."</td>" ."<td>" .$user['Percent'] ."</td>";
         
         //echo $user['Number'] . "  " . $user['Name'] . " " . $user['Year'] ." LIKES: " .$user['Likes'];
         echo "<td><a href='update.php?id=".$user['Number']."'> Update </a></td>";
