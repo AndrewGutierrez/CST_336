@@ -86,6 +86,39 @@
                 }
             });
                 }
+                
+        function passwordlength()
+        {
+            $("#pass-msg").html("");
+            if(pass1.value.length < 8)
+            {
+                $("#pass-msg").html("password not 8 characters");
+            }
+        }
+        
+        function messages() {
+                    
+            $.ajax({
+                type: "get",
+                url: "api.php",
+                dataType: "json",
+                data: {'username': $('#username').val() },
+                success: function(data,status) {
+                    //debugger;
+                    
+                    if (data.length > 0) {
+                        $('#sub-msg').html("success"); 
+                    } else {
+                        $('#sub-msg').html("username is incorrect");
+                    }
+                    
+                  },
+                complete: function(data,status) { //optional, used for debugging purposes
+                     //alert(status);
+                }
+            });
+                }
+        
     </script>
 </head>
 
@@ -95,7 +128,7 @@
 
    <h1> Sign Up Form </h1>
 
-    <form onsubmit="return false;">
+    <form onsubmit="passwordlength();return false;">
         <fieldset>
            <legend>Sign Up</legend>
             First Name:  <input type="text"><br> 
@@ -119,9 +152,9 @@
             Select a County: <select id="county-list"></select><br>
             
             Desired Username: <input onchange="validateUsername();" id='username' type="text"> <span id="username-valid"></span></span><br>
-            Password: <input type="password"><br>
-            Type Password Again: <input type="password"><br>
-            <input type="submit" value="Sign up!" class="btn btn-primary">
+            Password: <input onchnage="passwordlength();" id = "pass1" type="password"><span id= "pass-msg"></span><br>
+            Type Password Again: <input id = "pass2" type="password"><br>
+            <input type="submit" value="Sign up!" class="btn btn-primary"><span id="sub-msg"></span>
         </fieldset>
     </form>
 </body>

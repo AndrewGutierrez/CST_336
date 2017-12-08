@@ -5,6 +5,7 @@
          <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
+        
     <h1 id ="movie-head">Movies Database</h1>
     
 <?php
@@ -129,4 +130,8 @@
         echo "</div>";
     }
 ?>
+
+
+        <!--Used to return the user to the start if they want to go back-->
+        <button class="btn btn-info" onclick="window.location.href='login.php'">Return to start page</button>
 </html>
