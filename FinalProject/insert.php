@@ -24,6 +24,11 @@
         
         $stmt = $conn->prepare($sql);
         $stmt->execute();
+        
+        $sql= "INSERT INTO `ratings` (`ID`, `Name`, `Percent`) VALUES ('NULL','". $_GET['name'] ."', '0')";
+        
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
     }
 ?>
         <form id ="insert-form">
