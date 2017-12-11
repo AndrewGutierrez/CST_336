@@ -125,3 +125,70 @@ Stack trace:
 #1 {main}
   thrown in /home/ubuntu/workspace/github/FinalProject/user.php on line 94
 [04-Dec-2017 01:31:05 UTC] PHP Parse error:  syntax error, unexpected '"<td>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/github/FinalProject/user.php on line 121
+[11-Dec-2017 22:29:00 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/github/lab6/index.php on line 24
+[11-Dec-2017 22:29:00 UTC] PHP Stack trace:
+[11-Dec-2017 22:29:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:29:00 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:31:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'b229677fee94e5'@'localhost' (using password: YES) in /home/ubuntu/workspace/github/database.php on line 38
+[11-Dec-2017 22:31:35 UTC] PHP Stack trace:
+[11-Dec-2017 22:31:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:31:35 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:31:35 UTC] PHP   3. getDatabaseConnection() /home/ubuntu/workspace/github/lab6/index.php:9
+[11-Dec-2017 22:31:35 UTC] PHP   4. mysqli->mysqli() /home/ubuntu/workspace/github/database.php:38
+[11-Dec-2017 22:31:35 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/ubuntu/workspace/github/lab6/index.php on line 23
+[11-Dec-2017 22:31:35 UTC] PHP Stack trace:
+[11-Dec-2017 22:31:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:31:35 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:31:35 UTC] PHP   3. mysqli->prepare() /home/ubuntu/workspace/github/lab6/index.php:23
+[11-Dec-2017 22:31:35 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/github/lab6/index.php on line 24
+[11-Dec-2017 22:31:35 UTC] PHP Stack trace:
+[11-Dec-2017 22:31:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:31:35 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:32:08 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'b229677fee94e5'@'localhost' (using password: YES) in /home/ubuntu/workspace/github/database.php on line 38
+[11-Dec-2017 22:32:08 UTC] PHP Stack trace:
+[11-Dec-2017 22:32:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:32:08 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:32:08 UTC] PHP   3. getDatabaseConnection() /home/ubuntu/workspace/github/lab6/index.php:9
+[11-Dec-2017 22:32:08 UTC] PHP   4. mysqli->mysqli() /home/ubuntu/workspace/github/database.php:38
+[11-Dec-2017 22:32:08 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/ubuntu/workspace/github/lab6/index.php on line 23
+[11-Dec-2017 22:32:08 UTC] PHP Stack trace:
+[11-Dec-2017 22:32:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:32:08 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:32:08 UTC] PHP   3. mysqli->prepare() /home/ubuntu/workspace/github/lab6/index.php:23
+[11-Dec-2017 22:32:08 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/github/lab6/index.php on line 24
+[11-Dec-2017 22:32:08 UTC] PHP Stack trace:
+[11-Dec-2017 22:32:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:32:08 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:32:36 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'b229677fee94e5'@'localhost' (using password: YES) in /home/ubuntu/workspace/github/database.php on line 38
+[11-Dec-2017 22:32:36 UTC] PHP Stack trace:
+[11-Dec-2017 22:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:32:36 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:32:36 UTC] PHP   3. getDatabaseConnection() /home/ubuntu/workspace/github/lab6/index.php:9
+[11-Dec-2017 22:32:36 UTC] PHP   4. mysqli->mysqli() /home/ubuntu/workspace/github/database.php:38
+[11-Dec-2017 22:32:36 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/ubuntu/workspace/github/lab6/index.php on line 23
+[11-Dec-2017 22:32:36 UTC] PHP Stack trace:
+[11-Dec-2017 22:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:32:36 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:32:36 UTC] PHP   3. mysqli->prepare() /home/ubuntu/workspace/github/lab6/index.php:23
+[11-Dec-2017 22:32:36 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/github/lab6/index.php on line 24
+[11-Dec-2017 22:32:36 UTC] PHP Stack trace:
+[11-Dec-2017 22:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/index.php:0
+[11-Dec-2017 22:32:36 UTC] PHP   2. loginProcess() /home/ubuntu/workspace/github/lab6/index.php:68
+[11-Dec-2017 22:33:12 UTC] PHP Warning:  include(../../database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/github/lab6/updateUser.php on line 7
+[11-Dec-2017 22:33:12 UTC] PHP Stack trace:
+[11-Dec-2017 22:33:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/updateUser.php:0
+[11-Dec-2017 22:33:12 UTC] PHP Warning:  include(): Failed opening '../../database.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/github/lab6/updateUser.php on line 7
+[11-Dec-2017 22:33:12 UTC] PHP Stack trace:
+[11-Dec-2017 22:33:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/updateUser.php:0
+[11-Dec-2017 22:33:12 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/github/lab6/updateUser.php on line 8
+[11-Dec-2017 22:33:12 UTC] PHP Stack trace:
+[11-Dec-2017 22:33:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/updateUser.php:0
+[11-Dec-2017 22:33:38 UTC] PHP Warning:  include(../../database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/github/lab6/updateUser.php on line 7
+[11-Dec-2017 22:33:38 UTC] PHP Stack trace:
+[11-Dec-2017 22:33:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/updateUser.php:0
+[11-Dec-2017 22:33:38 UTC] PHP Warning:  include(): Failed opening '../../database.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/github/lab6/updateUser.php on line 7
+[11-Dec-2017 22:33:38 UTC] PHP Stack trace:
+[11-Dec-2017 22:33:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/updateUser.php:0
+[11-Dec-2017 22:33:38 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/github/lab6/updateUser.php on line 8
+[11-Dec-2017 22:33:38 UTC] PHP Stack trace:
+[11-Dec-2017 22:33:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/github/lab6/updateUser.php:0

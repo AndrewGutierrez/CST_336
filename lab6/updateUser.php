@@ -4,7 +4,7 @@ if(!isset($_SESSION['username']))
 {
     header("Location: index.php");
 }
-    include '../../database.php';
+    include '../database.php';
     $conn = getDatabaseConnection();
 
 function getUserInfo() {

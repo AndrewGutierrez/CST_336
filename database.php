@@ -27,14 +27,15 @@ function getDatabaseConnection()
     $password = "99214852";
     $dbname="heroku_ae0fb105b2b4a84";
     
+    /*
     $host = "localhost";
     $username = "root";
     $password = "cst336";
     $dbname="midterm";
-
+*/
 // Create connection new mysqli($servername, $username, $password, $dbname);
-   //$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-   $conn = new mysqli($servername, $username, $password, $dbname);
+   $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+   //$conn = new mysqli($servername, $username, $password, $dbname);
   // $conn = new mysqli($servername, $username, $password, $dbname);
     //$conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $conn;
