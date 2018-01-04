@@ -87,7 +87,7 @@ h2{
     <div class="content">
       <img src="pictures/Lab_1.png" alt="Lab 1" style="width:100%" width="42" height="150">
       <h3>Lab 1</h3>
-      <p>Simple about me website page
+      <p>Simple about me website
           <br>
           <a href="lab1/index.html">Lab 1</a>
       </p>
